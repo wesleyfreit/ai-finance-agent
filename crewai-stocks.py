@@ -19,7 +19,7 @@ load_dotenv(override=True)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
-llm = ChatOpenAI(model="gpt-3.5-turbo", api_key=OPENAI_API_KEY)
+llm = ChatOpenAI(model="gpt-4o-mini", max_tokens=200, api_key=OPENAI_API_KEY)
 
 
 def fetch_stock_price(ticket):
